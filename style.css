@@ -1,0 +1,138 @@
+/*
+#2B2741 
+#8FEBD5
+#E7F7F4
+*/
+
+@font-face {
+    font-family: 'openSans';
+    src: url(../functions_calculator/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'openBold';
+    src: url(../functions_calculator/fonts/OpenSans-Bold.ttf);
+}
+* {
+    margin: 0;
+    font-family: "openSans";
+    line-height: 2em;
+}
+h2, p { 
+    color: #E7F7F4;
+}
+#mainContainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 20% 0.5% 0.5% 0.5% 57% 0.5% 0.5% 0.5% 20%;
+}
+#infoContainer{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:#2B2741 ;
+    padding: 15px;
+}
+#formContainer { 
+    display: flex;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    justify-items: center;
+    background-color: #F3FBFA;
+}
+#history {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    background-color:#E7F7F4;
+    padding: 15px;
+}
+#history h2 {
+    color: #2B2741;
+}
+#history p {
+color: #2B2741;
+font-size: 15px;
+line-height: 1em;
+}
+#stripOne{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #445866;
+}
+#stripTwo{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #5D898B;
+}
+#stripThree{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-color: #76BAB0;
+}
+#stripFour{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    background-color: #A5EEDD;
+}
+#stripFive{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    background-color: #BBF1E5;
+}
+#stripSix{
+    grid-column-start: 8;
+    grid-column-end: 9;
+    background-color: #D1F4ED;
+}
+.calculatorContainer {   
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 16% 16% 16% 16% 16%;
+    height: 600px;
+    width: 500px;
+    padding: 5px;
+    background-color: #8FEBD5;
+    border-radius: 5px;
+    margin: auto;
+}
+textarea{
+    border-radius: 5px;
+    font-size: 30px;
+    color: #2B2741;
+}
+input {
+    color: #2B2741;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid  #2B2741 ;
+    font-size: 30px;
+   
+}
+
+
+#displayTwo {
+    border: solid 1px black;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: white;   
+}
+
+#clear, #seven, #four, #one {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#plusMinus, #eight, #five, #two {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#percentage, #nine, #six, #three, #decimal {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#divide, #multiply, #minus, #plus, #equals {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+#zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
